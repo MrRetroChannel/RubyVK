@@ -25,6 +25,6 @@ class VkApi
     end
 end
 
-vk = VkApi.new('gleb.kozyrev@bk.ru', 'mrretro228', "7968444")
+vk = VkApi.new
 vk.request_method 'account.getAppPermission', 'user_id=167012209&'
-puts vk.request_method 'messages.send', 'user_id=197054533&message=huesos'
+puts vk.request_method 'messages.send', 'user_id=197054533&message="hehe"'
